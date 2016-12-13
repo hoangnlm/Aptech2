@@ -18,8 +18,8 @@ public class Aptech1Builder {
         return this;
     }
 
-    public Aptech122 createAptech1() {
-        return new Aptech122(delegate);
+    public Aptech1 createAptech1() {
+        return new Aptech1(delegate);
     }
     
 }

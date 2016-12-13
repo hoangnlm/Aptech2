@@ -11,20 +11,20 @@ import java.util.Arrays;
  *
  * @author Hoang
  */
-public class Aptech122 {
+public class Aptech1 {
     
     private Aptech delegate;
 
-    public Aptech122(Aptech delegate) {
+    public Aptech1(Aptech delegate) {
         this.delegate = delegate;
     }
 
-    public Aptech122() {
+    public Aptech1() {
         this.delegate = new Aptech();
     }
 
-    public static final Aptech122[] wrap(Aptech... aptechs) {
-        return Arrays.stream(aptechs).map((Aptech t) -> new Aptech1Builder().setDelegate(t).createAptech1()).toArray(aptech.Aptech122[]::new);
+    public static final Aptech1[] wrap(Aptech... aptechs) {
+        return Arrays.stream(aptechs).map((Aptech t) -> new Aptech1Builder().setDelegate(t).createAptech1()).toArray(aptech.Aptech1[]::new);
     }
 
     /**
@@ -66,8 +66,8 @@ public class Aptech122 {
     @Override
     public boolean equals(Object o) {
         Object target = o;
-        if (o instanceof Aptech122) {
-            target = ((Aptech122) o).delegate;
+        if (o instanceof Aptech1) {
+            target = ((Aptech1) o).delegate;
         }
         return this.delegate.equals(target);
     }

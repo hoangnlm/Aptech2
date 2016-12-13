@@ -17,7 +17,7 @@ public class Aptech {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO 
+
         double a = 12.23;
         double b = 10;
         Aptech it = new Aptech();
