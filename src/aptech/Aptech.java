@@ -5,6 +5,7 @@
  */
 package aptech;
 
+import aptech.subpack.SubTest1;
 import java.util.Scanner;
 
 /**
@@ -35,6 +36,11 @@ public class Aptech {
         System.out.println("a * b = " + run2(a, b, (a1, b1) -> {
             return a1 * b1;
         }));
+        
+        System.out.println("test subpackage:");
+        SubTest1 sub1 = new SubTest1();
+        System.out.println(sub1.getPro1());
+        
         Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
     }
